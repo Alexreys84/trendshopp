@@ -1,0 +1,144 @@
+/* Reset básico e estilos globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.carousel-item {
+    background: url('img/banner.jpeg') no-repeat center center;
+}
+.carousel-inner .d-flex {
+    width: 100%;
+    overflow-x: auto; /* Permite rolar horizontalmente se necessário */
+    padding: 0 70px; /* Adiciona um pouco de padding lateral */
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+.card p-4 shadow-sm{
+    max-width: 500px;
+    width: 100%;
+    
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Faz a imagem cobrir o container sem distorção */
+}
+
+/* Cabeçalho */
+header img {
+    max-height: 50px; /* Ajuste conforme necessário */
+}
+
+header .nav {
+    margin-left: 15px;
+}
+
+header .form-control {
+    width: 200px; /* Largura padrão da barra de pesquisa */
+}
+
+/* Ajustes para o carrossel */
+#carousel {
+    margin-top: 20px;
+    max-width: 100%; /* Ajusta a largura máxima para o tamanho do container pai */
+}
+
+.carousel-inner img {
+    max-height: 400px; /* Define a altura máxima das imagens do carrossel */
+    object-fit: cover; /* Faz a imagem cobrir o container sem distorção */
+}
+
+/* Estilos Responsivos */
+
+/* Smartphones (vertical) */
+@media (max-width: 575.98px) {
+    header .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    header .form-control {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .carousel-caption {
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .carousel-inner img {
+        max-height: 300px; /* Ajusta a altura das imagens em smartphones */
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+/* Tablets (vertical) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header .form-control {
+        width: 150px; /* Ajuste para tablets */
+    }
+
+    .carousel-caption {
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .carousel-inner img {
+        max-height: 350px; /* Ajusta a altura das imagens em tablets */
+    }
+}
+
+/* Tablets (horizontal) e menores desktops */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .carousel-caption {
+        bottom: 40px;
+    }
+
+    .carousel-inner img {
+        max-height: 400px; /* Ajusta a altura das imagens em tablets horizontais e menores desktops */
+    }
+}
+
+/* Desktops e maiores */
+@media (min-width: 992px) {
+    header .nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header .form-control {
+        width: 250px; /* Largura maior para desktops */
+    }
+
+    .carousel-inner img {
+        max-height: 450px; /* Ajusta a altura das imagens em desktops */
+    }
+}
+
+/* Cards de Produtos */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    object-fit: cover; /* Faz a imagem cobrir o container do card sem distorção */
+}
+
+/* Rodapé */
+footer p {
+    margin: 0;
+}
